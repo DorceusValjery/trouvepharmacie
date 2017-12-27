@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="PharmaciesList" cloudDestinationProperty="PharmaciesList" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" title="Pharmacies trouv&#xe9;es" >
+  <component type="Label" name="Label" cloudDestinationProperty="Label" uiid="SuperLabel" text="&quot;aspirine 50 mg&quot;" >
+  </component>
+  <component type="MultiList" name="MultiList" cloudDestinationProperty="MultiList" >
+    <mapItems>
+      <stringItem key="Line4" value="test4" />
+      <stringItem key="Line3" value="test" />
+      <stringItem key="Line2" value="+509 33 33 44 44" />
+      <stringItem key="Line1" value="Pharmacie de Turgeau" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="Line2" value="+509 22 22 33 33" />
+      <stringItem key="Line1" value="Pharmacie du Champs-de-Mars" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="Line2" value="+509 11 11 11 11" />
+      <stringItem key="Line1" value="Big Pharma" />
+    </mapItems>
+  </component>
+</component>

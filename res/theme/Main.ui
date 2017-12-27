@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" layout="BoxLayout" boxLayoutAxis="Y" title="Recherche de m&#xe9;dicaments" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="BoxLayout" boxLayoutAxis="X" >
+      <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Nom du m&#xe9;dicament" >
+      </component>
+      <component type="TextField" name="TextField" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="..." >
+      </component>
+    </component>
+    <component type="Container" name="Container2" cloudDestinationProperty="Container2" layout="BoxLayout" boxLayoutAxis="X" >
+      <component type="Label" name="Label2" cloudDestinationProperty="Label2" text="Dosage en Mg" >
+      </component>
+      <component type="TextField" name="TextField1" cloudBoundProperty="text" cloudDestinationProperty="TextField1" text="..." >
+      </component>
+    </component>
+    <component type="Container" name="Container3" cloudDestinationProperty="Container3" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Label" name="Label3" cloudDestinationProperty="Label3" text="Priorisez en fonction du prix ou de la distance" >
+      </component>
+      <component type="Container" name="Container4" cloudDestinationProperty="Container4" >
+        <component type="RadioButton" name="RadioButton1" cloudDestinationProperty="RadioButton1" text="Plus proche" group="price_vs_location" selected="true" >
+        </component>
+        <component type="RadioButton" name="RadioButton" cloudDestinationProperty="RadioButton" uiid="RadioButton" text="Plus bon march&#xe9;" group="price_vs_location" >
+        </component>
+      </component>
+    </component>
+  </component>
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="Rechercher" commandId="1" commandAction="PharmaciesList" commandBack="false" text="Rechercher" >
+  </component>
+</component>
