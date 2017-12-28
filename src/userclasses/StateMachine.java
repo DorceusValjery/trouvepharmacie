@@ -28,6 +28,17 @@ public class StateMachine extends StateMachineBase {
      * the constructor/class scope to avoid race conditions
      */
     protected void initVars(Resources res) {
+        this.res = res;
+    }
+    
+    /**
+     * this is where my customized code starts
+     * @param c
+     * @param event 
+     */
+    private Resources res;
+    public Resources getResources(){
+        return this.res;
     }
 
 
