@@ -11,6 +11,9 @@ import generated.StateMachineBase;
 import com.codename1.ui.*; 
 import com.codename1.ui.events.*;
 import com.codename1.ui.util.Resources;
+import com.trouvepharmacie.app.controllers.IntroductionController;
+import com.trouvepharmacie.app.controllers.MainController;
+import com.trouvepharmacie.app.controllers.PharmaciesListController;
 
 /**
  *
@@ -46,5 +49,20 @@ public class StateMachine extends StateMachineBase {
     protected void onMain_ButtonAction(Component c, ActionEvent event) {
 
     
+    }
+
+    @Override
+    protected void beforeIntroduction(Form form) {
+        new IntroductionController(form,this);
+    }
+
+    @Override
+    protected void beforeMain(Form form) {
+        new MainController(form,this);
+    }
+
+    @Override
+    protected void beforePharmaciesList(Form form) {
+        new PharmaciesListController(form, this);
     }
 }
